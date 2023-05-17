@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarFood</title>
+    <!-- favicons -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <!-- font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#mainContent" class="skip-link">Explore Restaurants</a>
+
+    <!-- Navbar Section Start -->
+    <nav class="navbar" data-navbar>
+        <div class="navbar-logo">
+            <h1>
+                <a href="#/" class="navbar-logo__link">StarFood<span class="span">.</span>
+                </a>
+            </h1>
+        </div>
+        <div class="navbar-mobile">
+            <div class="mobile-button">
+                <button class="navbar-mobile__btn" aria-label="dropdown menu mobile button" type="button">
+                    <i class="fa-solid fa-burger navbar-mobile__icon" alt="mobile menu icon"></i>
+                </button>
+                <ul class="mobile-menu">
+                    <li class="mobile-item">
+                        <a href="" class="mobile-item__link"> Home </a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="#/" class="mobile-item__link"> Favorite </a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="https://www.linkedin.com/in/nurmuhimawann/" class="mobile-item__link" target="_blank" rel="noopener noreferrer"> About Us </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-logo">
+                <h1>
+                    <a href="#/" class="mobile-logo__link">StarFood<span class="span">.</span></a>
+                </h1>
+            </div>
+        </div>
+        <ul class="navbar-list">
+            <li class="navbar-item">
+                <a href="" class="navbar-item__link"> Home </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#/" class="navbar-item__link"> Favorite </a>
+            </li>
+            <li class="navbar-item">
+                <a href="https://www.linkedin.com/in/nurmuhimawann/" class="navbar-item__link" target="_blank" rel="noopener noreferrer"> About Us </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar Section End -->
+
+    <!-- Hero Section Start -->
+    <header>
+        <div class="hero" tabindex="0">
+            <div class="hero-banner">
+                <picture>
+                    <img class="hero-banner__img" src="./images/heros/hero-image_2.jpg" alt="hero image" />
+                </picture>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-text__title">StarFood</h1>
+                <p class="hero-text__subtitle">
+                    Discover the best restaurant in your vicinity.
+                </p>
+                <a href="#mainContent" class="hero-text__btn">Explore</a>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section End -->
+
+    <!-- Content Section Start -->
+    <main id="mainContent" tabindex="0">
+        <div class="home-page">
+            <div id="main-content" class="main-content">
+                <h2 class="main-content__title">Explore Restaurant</h2>
+                <section id="restaurantList" class="restaurant-list"></section>
+            </div>
+        </div>
+    </main>
+    <!-- Content Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+        <div class="footer-content" tabindex="0">
+            <p>Copyright © 2023 StarFood Inc. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to top button -->
+    <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+        <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- ionicons link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
