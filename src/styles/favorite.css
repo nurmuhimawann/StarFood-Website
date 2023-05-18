@@ -1,0 +1,33 @@
+.favorite-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2rem 4rem;
+}
+
+.favorite-page__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.favorite-restaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.favorite-restaurants__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-restaurants__empty img {
+  width: 100%;
+  max-width: 500px;
+}
