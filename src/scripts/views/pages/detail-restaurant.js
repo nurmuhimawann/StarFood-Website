@@ -18,8 +18,23 @@ const Detail = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const hero = document.querySelector('.hero');
     const restaurantDetailContainer = document.querySelector('#restaurantDetail');
+    const navbar = document.querySelector('#navbar');
+    const backToTop = document.querySelector('.back-top-btn');
+    const backTopBtn = document.querySelector('[data-back-top-btn]');
 
+    window.onscroll = null;
+    navbar.classList.add('active');
     hero.style.display = 'none';
+    backToTop.style.bottom = '95px';
+    backToTop.style.right = '35px';
+
+    window.onscroll = () => {
+      if (window.scrollY >= 100) {
+        backTopBtn.classList.add('active');
+      } else {
+        backTopBtn.classList.remove('active');
+      }
+    };
 
     try {
       const restaurant = await RestaurantSource.restaurantDetail(url.id);

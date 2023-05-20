@@ -17,9 +17,22 @@ const Home = {
     const restaurantsContainer = document.querySelector('#restaurantList');
     const hero = document.querySelector('.hero');
     const mainContent = document.querySelector('#main-content');
+    const navbar = document.querySelector('[data-navbar]');
+    const backTopBtn = document.querySelector('[data-back-top-btn]');
 
     hero.style.display = 'none';
     mainContent.style.display = 'none';
+    navbar.classList.remove('active');
+
+    window.onscroll = () => {
+      if (window.scrollY >= 100) {
+        navbar.classList.add('active');
+        backTopBtn.classList.add('active');
+      } else {
+        navbar.classList.remove('active');
+        backTopBtn.classList.remove('active');
+      }
+    };
 
     try {
       const restaurants = await RestaurantSource.restaurantList();

@@ -105,8 +105,8 @@
   font-weight: 500;
 }
 
-.navbar-item__link:is(:hover, :focus),
-.navbar.active .navbar-item__link:is(:hover, :focus) {
+.navbar-item__link:is(:hover),
+.navbar.active .navbar-item__link:is(:hover) {
   color: hsl(28, 100%, 58%);
   text-decoration: underline;
 }
@@ -526,7 +526,9 @@ footer {
   right: 20px;
   background-color: hsl(32, 100%, 59%);
   color: white;
+  cursor: pointer;
   padding: 15px;
+  border: none;
   border-radius: 50%;
   box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
   z-index: 2;
@@ -545,7 +547,7 @@ footer {
   transform: translateY(-10px);
 }
 
-.back-top-btn:is(:hover, :focus) {
+.back-top-btn:is(:hover) {
   background-color: hsl(210, 26%, 7%);
 }
 

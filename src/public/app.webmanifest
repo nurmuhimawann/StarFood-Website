@@ -3,7 +3,7 @@
   "start_url": "./index.html",
   "name": "StarFood - Find Your Favorite Food in Your Vicinity",
   "short_name": "StarFood",
-  "description": "Restaurants Catalog",
+  "description": "Restaurants Catalogue",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ff8d29",

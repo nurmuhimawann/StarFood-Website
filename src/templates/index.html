@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StarFood</title>
+    <meta name="theme-color" content="##FDA400"/>
+    <meta name="description" content="A simple restaurant catalog tailored to your taste
+    makes it easy to choose the best dining options in the nearby area, from cozy cafes to trendy eateries.">
+
     <!-- favicons -->
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
     <link rel="manifest" href="app.webmanifest">
+
     <!-- font awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -21,7 +26,7 @@
     <a href="#mainContent" class="skip-link">Explore Restaurants</a>
 
     <!-- Navbar Section Start -->
-    <nav class="navbar" data-navbar>
+    <nav class="navbar active" id="navbar" data-navbar>
         <div class="navbar-logo">
             <h1>
                 <a href="#/" class="navbar-logo__link">StarFood<span class="span">.</span>
@@ -97,9 +102,9 @@
     <!-- Footer Section End -->
 
     <!-- Back to top button -->
-    <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <button id="back-top-btn" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
         <ion-icon name="chevron-up"></ion-icon>
-    </a>
+    </button>
 
     <!-- ionicons link -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

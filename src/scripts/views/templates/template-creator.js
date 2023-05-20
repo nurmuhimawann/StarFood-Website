@@ -17,7 +17,7 @@ const createRestaurantDetail = (restaurant) => `
         <h3 class="restaurant-detail__title" tabindex="0">${restaurant.name}</h3>
         <div class="restaurant-detail__meta">
           <div class="restaurant-detail__rating" tabindex="0">
-            <i class="fa fa-star restaurant-detail__rating-icon" alt="rating icon"></i>
+            <i class="fa fa-star checked restaurant-detail__rating-icon" alt="rating icon"></i>
             <span class="restaurant-detail__rating-score">${restaurant.rating}</span>
           </div>
           <div class="restaurant-detail__location" tabindex="0">

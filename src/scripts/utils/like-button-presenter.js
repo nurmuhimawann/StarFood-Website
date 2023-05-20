@@ -1,7 +1,6 @@
 import { createLikeButton, createUnlikeButton } from '../views/templates/template-creator';
 
 const LikeButtonPresenter = {
-  // eslint-disable-next-line no-shadow
   async init({ likeButtonContainer, restaurant, favoriteRestaurants: FavoriteRestaurants }) {
     this._likeButtonContainer = likeButtonContainer;
     this._restaurant = restaurant;
