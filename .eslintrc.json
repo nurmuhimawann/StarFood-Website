@@ -17,5 +17,9 @@
         "no-underscore-dangle": 0,
         "no-restricted-globals": 0,
         "linebreak-style": 0
+    },
+    "globals": {
+        // Other global variables
+        "workbox": "readonly"
     }
 }

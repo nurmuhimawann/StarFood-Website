@@ -94,9 +94,9 @@ const createRestaurantCard = (restaurant) => `
         <img
           class="restaurant-image__img lazyload"
           data-src="${restaurant.pictureId
-            ? `${CONFIG.BASE_IMAGE_URL}large/${restaurant.pictureId}`
-            : './images/loading.gif'
-          }"
+    ? `${CONFIG.BASE_IMAGE_URL}large/${restaurant.pictureId}`
+    : './images/loading.gif'
+}"
           alt="${restaurant.name}"
           tabindex="0"
         />
