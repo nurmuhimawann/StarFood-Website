@@ -1,0 +1,344 @@
+/* Detail Page Start */
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 4rem;
+  padding-top: 5rem;
+}
+
+.restaurant-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurant-detail__header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-detail__image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+.restaurant-detail__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s ease-in-out;
+}
+
+.restaurant-detail__image-container:hover .restaurant-detail__image {
+  transform: scale(1.1);
+}
+
+.restaurant-detail__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-right: 2rem;
+}
+
+.restaurant-detail__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1.5;
+  max-height: 1.5;
+}
+
+.restaurant-detail__meta {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-detail__rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 1rem;
+  color: #FDA400;
+}
+
+.restaurant-detail__rating-icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.restaurant-detail__rating-score {
+  font-family: system-ui !important;
+  font-size: 1.1rem;
+}
+
+.restaurant-detail__location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 1rem;
+  color: #F75940;
+}
+
+.restaurant-detail__location-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.restaurant-detail__location-address {
+  font-family: system-ui !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.restaurant-detail__description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.restaurant-detail__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 30%;
+}
+
+.restaurant-detail__address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.restaurant-detail__address-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-detail__address-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.restaurant-detail__categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.restaurant-detail__categories-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.restaurant-detail__categories-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+.restaurant-detail__categories-item {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-right: 1rem;
+}
+
+/* Menu Section Start */
+
+.restaurant-detail__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.restaurant-detail__menu-food,
+.restaurant-detail__menu-drink {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.restaurant-detail__menu-food {
+  margin-bottom: 1rem;
+}
+
+.restaurant-detail__menu-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.restaurant-detail__menu-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+/* Menu Section End */
+
+
+/* Customers Review Start */
+.customer-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.customer-review__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.customer-review__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.customer-review__image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-right: 2rem;
+  border-radius: 100%;
+}
+
+.customer-review__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.customer-review__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+}
+
+.customer-review__name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 1.5;
+  max-height: 1.5;
+}
+
+.customer-review__date,
+.customer-review__content {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 1.5;
+  max-height: 6;
+}
+
+/* Customers Review End */
+/* Detail Page End */
+
+
+/* Like-button Start */
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(32, 100%, 59%);
+
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.like:is(:hover, :focus) {
+  background-color: hsl(210, 26%, 7%);
+}
+
+/* Like-button End */
