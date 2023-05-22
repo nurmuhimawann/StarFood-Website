@@ -5,6 +5,7 @@ const createRestaurantDetail = (restaurant) => `
     <div class="restaurant-detail__header">
       <div class="restaurant-detail__image-container">
         <picture>
+          <source media="(max-width: 600px)" data-srcset="${CONFIG.BASE_IMAGE_URL}small/${restaurant.pictureId}">
           <img
             class="restaurant-detail__image lazyload"
             data-src="${CONFIG.BASE_IMAGE_URL}large/${restaurant.pictureId}"
@@ -68,9 +69,10 @@ const createRestaurantDetail = (restaurant) => `
       <div class="customer-review__item" tabindex="0">
         <div class="customer-review__image-container">
           <picture>
+            <source media="(max-width: 600px)" data-srcset="./images/heros/customer-reviews-small.jpg">
             <img
               class="customer-review__image lazyload"
-              data-src="./images/customers.png"
+              data-src="./images/heros/customer-reviews-large.jpg"
               alt="customer review"
               tabindex="0"
             />
@@ -91,11 +93,15 @@ const createRestaurantCard = (restaurant) => `
   <div class="restaurant" tabindex="0">
     <div class="restaurant-image__container">
       <picture>
+        <source media="(max-width: 600px)" data-srcset="${restaurant.pictureId
+          ? `${CONFIG.BASE_IMAGE_URL}small/${restaurant.pictureId}`
+          : './images/loading.mp4'
+        }">
         <img
           class="restaurant-image__img lazyload"
           data-src="${restaurant.pictureId
     ? `${CONFIG.BASE_IMAGE_URL}large/${restaurant.pictureId}`
-    : './images/loading.gif'
+    : './images/loading.mp4'
 }"
           alt="${restaurant.name}"
           tabindex="0"
@@ -122,7 +128,7 @@ const createRestaurantCard = (restaurant) => `
         ${restaurant.description}
       </p>
       <a href="#/restaurant/${restaurant.id}" class="restaurant-link">
-        <button class="restaurant-card__button" aria-label="look at this restaurant" id="detailButton" data-id="${restaurant.id}">
+        <button class="restaurant-card__button" aria-label="look at this restaurant" data-id="${restaurant.id}">
           Read More
         </button>
       </a>
