@@ -12,9 +12,9 @@ Scenario('showing empty liked restaurants', ({ I }) => {
 });
 
 Scenario('liking one restaurant', async ({ I }) => {
-  I.amOnPage('/');
+  I.amOnPage('/#/');
 
-  I.seeElement('.restaurant');
+  I.waitForElement('.restaurant');
   const firstRestaurant = locate('.restaurant-info .restaurant-title').first();
   const firstRestaurantTitle = await I.grabTextFrom(firstRestaurant);
   I.click('.restaurant-card__button');
@@ -31,9 +31,9 @@ Scenario('liking one restaurant', async ({ I }) => {
 Scenario('unliking one restaurant', async ({ I }) => {
   I.seeElement('.favorite-restaurants__empty');
 
-  I.amOnPage('/');
+  I.amOnPage('/#/');
 
-  I.seeElement('.restaurant');
+  I.waitForElement('.restaurant');
   I.click('.restaurant-card__button');
 
   I.seeElement('#likeButtonContainer');
