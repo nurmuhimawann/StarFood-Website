@@ -14,9 +14,17 @@
     "build-image": "node sharp.js",
     "build-serve": "npm run build && npm run build-image && npm run serve"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurmuhimawann/StarFood-Website.git"
+  },
   "keywords": [],
   "author": "Nur Muhammad Himawan <muhammad.himawan73@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurmuhimawann/StarFood-Website/issues"
+  },
+  "homepage": "https://github.com/nurmuhimawann/StarFood-Website/#readme",
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
