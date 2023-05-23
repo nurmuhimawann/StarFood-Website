@@ -29,6 +29,18 @@ Scenario('liking one restaurant', async ({ I }) => {
 });
 
 Scenario('unliking one restaurant', async ({ I }) => {
+  I.seeElement('.favorite-restaurants__empty');
+
+  I.amOnPage('/');
+
+  I.seeElement('.restaurant');
+  I.click('.restaurant-card__button');
+
+  I.seeElement('#likeButtonContainer');
+  I.click('#likeButton');
+
+  I.amOnPage('/#/favorite');
+
   I.seeElement('.restaurant');
   const firstRestaurantButton = locate('.restaurant-card__button').first();
   I.click(firstRestaurantButton);
